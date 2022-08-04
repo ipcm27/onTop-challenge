@@ -1,0 +1,133 @@
+<nav class="navbar navbar-expand-lg bg-light height-100">
+  <div class="container height-100">
+    <a class="navbar-brand" href="#">
+      <img
+        src="assets/logo_ontop.svg"
+        class="navbar-brand"
+        alt="Logo"
+        href="#"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav height-100 w-100">
+        <div>
+          <div class=" d-flex flex-row align-items-center d-lg-none w-100 ">
+            <img
+              src="assets/images/Ellipse 49.svg"
+              alt=""
+              class="profile-mobile pt-2"
+            />
+            <p class="m-0 profile-name">Michael Smith</p>
+          </div>
+          <hr class="m-2" />
+        </div>
+
+        <li
+          class="nav-item dropdown"
+          [routerLink]="['/dashboard']"
+          routerLinkActive="active"
+        >
+          <div
+            class=" height-100 d-flex flex-row align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined">
+              person
+            </span>
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+              Contracts
+            </a>
+          </div>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+        <li routerLinkActive="active" class="nav-item dropdown ">
+          <div
+            class=" height-100 d-flex flex-row align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined">
+              description
+            </span>
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+              Documents
+            </a>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+        <li routerLinkActive="active" class="nav-item dropdown">
+          <div
+            class=" height-100 d-flex flex-row align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined">
+              credit_card
+            </span>
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+              Payout
+            </a>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+        <li routerLinkActive="active" class="nav-item dropdown">
+          <div
+            class=" height-100 d-flex flex-row align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined">
+              calendar_month
+            </span>
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+              Time
+            </a>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <div
+          class="nav-item px-4 ms-auto my-auto profile-picture d-none d-lg-block"
+        >
+          <img src="assets/images/Ellipse 49.svg" alt="" class="" />
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Aileron", Sans-Serif;
+  src: url("/assets/aileron/Aileron-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Aileron", Sans-Serif;
+  src: url("/assets/aileron//Aileron-SemiBold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Aileron", Sans-Serif;
+  src: url("/assets/aileron/Aileron-Bold.otf") format("opentype");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Aileron", Sans-Serif;
+  src: url("/assets/aileron/Aileron-Light.otf") format("opentype");
+  font-weight: Lighter;
+}

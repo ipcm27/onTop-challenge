@@ -1,0 +1,13 @@
+ <!-- <div class="px-4 ms-auto profile-picture d-none d-lg-block">
+        <img src="assets/images/Ellipse 49.svg" alt="" class="" />
+      </div> -->
+
+        <!-- <div class="nav-item d-flex d-lg-none w-100 ">
+          <img
+            src="assets/images/Ellipse 49.svg"
+            alt=""
+            class="profile-mobile pt-2"
+          />
+          Client name
+          <hr class="m-2" />
+        </div> -->

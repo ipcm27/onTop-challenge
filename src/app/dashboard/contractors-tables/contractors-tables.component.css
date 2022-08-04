@@ -1,0 +1,143 @@
+/* Containers */
+#table-container {
+  width: 100%;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons */
+.btn-vertical {
+  color: #c4c4c4;
+  font-weight: 700;
+}
+
+/* Table */
+
+.table-head {
+  padding: 36px;
+  font-family: "Aileron", Sans-Serif;
+  font-weight: bold;
+}
+
+.table-row {
+  background-color: #f9f9f9;
+  padding: 33px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  width: 100%;
+  font-family: "Aileron", Sans-Serif;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-box {
+  background: #ffffff;
+  padding: 10px 15px !important;
+  margin-bottom: 20px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-style: none !important;
+  border-bottom-width: 0px !important;
+}
+
+/* Bullets */
+.active {
+  background: rgba(54, 207, 130, 0.18);
+  color: #36cf82;
+  border-radius: 20px;
+  font-size: 10px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active ul {
+  list-style: none;
+}
+
+.active ul li::before {
+  content: "\2022";
+  color: #36cf82;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.pending {
+  background: rgba(242, 157, 66, 0.3);
+  border-radius: 20px;
+  color: #f29d42;
+  min-height: 24px;
+  height: fit-content;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pending ul {
+  list-style: none;
+}
+
+.pending ul li::before {
+  content: "\2022";
+  color: #f29d42;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* icons */
+.dropdown-item .delete-icon {
+  color: #ff5a70 !important;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 5px !important;
+  padding: 10px 15px;
+  border: none !important;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  font-family: "Aileron", Sans-Serif;
+  font-weight: lighter;
+  color: #3b3b3b;
+  font-size: 14px;
+  line-height: 24px;
+
+  /* identical to box height, or 171% */
+  letter-spacing: 0.1px;
+}
+.dropdown-item span,
+.dropdown-item img {
+  color: #3b3b3b;
+  margin-right: 10px;
+}

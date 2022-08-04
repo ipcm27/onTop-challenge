@@ -1,0 +1,215 @@
+<div id="table-container" class="d-md-flex d-none ">
+  <div class="container">
+    <div class="row table-head mx-auto">
+      <div class="col-3">Contratctor name</div>
+      <div class="col">Type</div>
+      <div class="col">Start date</div>
+      <div class="col">Amount</div>
+      <div class="col">Status</div>
+      <div class="col">Actions</div>
+    </div>
+    <div class="row table-row mx-auto" *ngFor="let contractor of Contractors">
+      <div class="col-1">
+        <img
+          class="img d-block mx-auto "
+          src="{{ contractor.ProfilePicture }}"
+          alt=""
+        />
+      </div>
+      <div class="col-2">{{ contractor.Name }}</div>
+      <div class="col ">{{ contractor.TypeOfContract }}</div>
+      <div class="col ">{{ contractor.StartDate }}</div>
+      <div class="col ">{{ contractor.Amount | currency: "USD" }} USD</div>
+      <div
+        class="col "
+        [ngClass]="{
+          active: contractor.Status == 'active',
+          pending: contractor.Status == 'Signature pending'
+        }"
+      >
+        <ul class="m-0 p-0">
+          <li>{{ contractor.Status }}</li>
+        </ul>
+      </div>
+      <div class="col ">
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined btn-vertical">
+              more_vert
+            </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onCLick="ContractorService.editContratcor()"
+              >
+                <span class="material-symbols-outlined">
+                  edit
+                </span>
+                Edit
+              </button>
+            </li>
+            <hr />
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onCLick="ContractorService.signContratcor()"
+              >
+                <img
+                  src="assets/vector/sign.svg"
+                  alt="sign"
+                  Style="width:24px;height:24px"
+                />
+                Sign
+              </button>
+            </li>
+            <hr />
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onCLick="ContractorService.viewSummaryContratcor()"
+              >
+                <span class="material-symbols-outlined ">
+                  feed
+                </span>
+                View summary
+              </button>
+            </li>
+            <hr />
+            <li>
+              <button
+                class="dropdown-item "
+                type="button"
+                onCLick="ContractorService.deleteContratcor()"
+              >
+                <span class="material-symbols-outlined delete-icon">
+                  delete
+                </span>
+                Delete
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="table-container-mobile" class="d-flex d-md-none ">
+  <div class="container flex-column">
+    <div class="table-box container" *ngFor="let contractor of Contractors">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <th scope="row">Contractor Name</th>
+            <td>{{ contractor.Name }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Type</th>
+            <td>{{ contractor.TypeOfContract }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Start date</th>
+            <td>{{ contractor.StartDate }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Amount</th>
+            <td>{{ contractor.Amount | currency: "USD" }} USD</td>
+          </tr>
+          <tr>
+            <th scope="row">Status/th></th>
+            <td>
+              <ul class="m-0 p-0">
+                <li
+                  [ngClass]="{
+                    active: contractor.Status == 'active',
+                    pending: contractor.Status == 'Signature pending'
+                  }"
+                >
+                  {{ contractor.Status }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Actions</th>
+            <td>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="material-symbols-outlined btn-vertical">
+                    more_vert
+                  </span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      onCLick="ContractorService.editContratcor()"
+                    >
+                      <span class="material-symbols-outlined">
+                        edit
+                      </span>
+                      Edit
+                    </button>
+                  </li>
+                  <hr />
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      onCLick="ContractorService.signContratcor()"
+                    >
+                      <img src="assets/vector/sign.svg" alt="" />
+                      Sign
+                    </button>
+                  </li>
+                  <hr />
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      onCLick="ContractorService.viewSummaryContratcor()"
+                    >
+                      <span class="material-symbols-outlined ">
+                        feed
+                      </span>
+                      View summary
+                    </button>
+                  </li>
+                  <hr />
+                  <li>
+                    <button
+                      class="dropdown-item "
+                      type="button"
+                      onCLick="ContractorService.deleteContratcor()"
+                    >
+                      <span class="material-symbols-outlined delete-icon">
+                        delete
+                      </span>
+                      Delete
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

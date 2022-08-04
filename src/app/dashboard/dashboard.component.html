@@ -1,0 +1,21 @@
+<section>
+  <div
+    id="main-container"
+    class="container d-flex flex-column justify-content-center align-items-center"
+  >
+    <h1 class="title">Contracts for {{ Client.name }}</h1>
+    <app-inputs-filters-menu
+      class="inputs-filters-menu-component"
+    ></app-inputs-filters-menu>
+    <app-contractors-tables
+      class="contractors-tables-component"
+    ></app-contractors-tables>
+    <button onCLick="openChatBot() " class="btn btn-chatbot">
+      <img
+        src="/assets/talk-baloon.svg"
+        alt=""
+        class="img d-block mx-auto chatbot-icon"
+      />
+    </button>
+  </div>
+</section>

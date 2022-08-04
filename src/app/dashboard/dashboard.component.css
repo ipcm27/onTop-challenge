@@ -1,0 +1,47 @@
+/* Containers */
+section {
+  background: #f9f9f9;
+  position: relative;
+  padding-bottom: 110px;
+}
+#main-container {
+  padding-top: 65px;
+
+  width: 100%;
+}
+
+.contractors-tables-component {
+  width: 100%;
+}
+
+.inputs-filters-menu-component {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Aileron", Sans-Serif;
+  font-weight: bold;
+}
+
+/* chatbot */
+
+.btn-chatbot {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  border-radius: 100%;
+  background-color: #ff5a70;
+  width: 59px;
+  height: 59px;
+}
+
+.btn-chatbot:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+.chatbot-icon {
+  display: flex;
+  width: 30px;
+}
