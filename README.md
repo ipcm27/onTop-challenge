@@ -1,5 +1,8 @@
 # OntopChallenge
 
+![Captura de Tela 2022-08-03 às 23 15 46](https://user-images.githubusercontent.com/62574338/182748479-f40de94c-09c6-4ef2-b0a3-ccd101fb545f.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
 ## Development server
